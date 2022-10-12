@@ -228,11 +228,13 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  width: 50%;
 }
 
 .certificate {
-  width: 350px;
-  height: 280px;
+  width: 300px;
+  height: 220px;
+  margin: 20px;
 }
 
 .portfolio {
@@ -457,8 +459,8 @@ h4 {
   }
 
   .certificate {
-    width: 250px;
-    height: 180px;
+    width: 210px;
+    height: 150px;
   }
 
   .card {
@@ -515,9 +517,13 @@ h4 {
     font-size: 15px;
   }
 
+  .certificates {
+    width: 100%;
+  }
+
   .certificate {
     width: 200px;
-    height: 150px;
+    height: 160px;
     margin: 10px 10px;
   }
 
