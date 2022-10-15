@@ -155,10 +155,47 @@ particlesJS("particles-js", {
       scrub: 1
     }
   });
+
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  $('body').append('<div class="upbtn"></div>');            
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > 2500) {
+          $('.upbtn').css({
+              bottom: '15px'
+          });
+          } else {
+          $('.upbtn').css({
+              bottom: '-80px'
+          });
+      }
+  });
+  $('.upbtn').on('click',function() {
+      $('html, body').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
   
   gsap.from ('.element', {duration:1, delay:2, opacity:0, stagger:.3})
   gsap.fromTo('.cometa', {y:-150, x:50, opacity:.8}, {y:300, x:-800, opacity:0, duration:3, repeat: -1, repeatDelay: 7})
   gsap.from ('.laptop', {opacity:0, x:10, ease:'bounce', duration: 1.5, delay:3.5})
-  gsap.from ('.icon_one', {opacity:1, rotate:360, x: 200, y:300, duration:1, delay:3.6, scale:0})
+  gsap.from ('.icon_one', {opacity:1, rotate:360, x: 100, y:300, duration:1, delay:3.6, scale:0})
   gsap.from ('.icon_two', {opacity:1, rotate:360, x: 400, y:200, duration:1, delay:3.8, scale:0})
   gsap.from ('.icon_three', {opacity:1, rotate:360, x: -50, y:300, duration:1, delay:4, scale:0})
