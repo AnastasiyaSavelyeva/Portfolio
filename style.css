@@ -628,20 +628,23 @@ h4 {
   }
 
   .me {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-left: 0;
     padding: 10px;
   }
 
   .about {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
+    padding: 10px;
   }
 
   #container {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(to top, #012E4A var(--target), #81BECE var(--target));
+    height: 80vh;
   }
 
   .icons img {
@@ -650,11 +653,6 @@ h4 {
 
   .icons {
     padding: 5px;
-  }
-
-  .certificates {
-    align-content: center;
-    margin: 10px;
   }
 
   .certificate {
