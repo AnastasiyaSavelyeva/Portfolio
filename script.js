@@ -111,6 +111,37 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
   
+
+  const pictures = ['images/JavaScript.png', 'images/htmlCSS.png', 'images/bootstrap5.png', 'images/Figma.png'];
+  
+  let i =0;
+  
+  function changing (){
+    i++;
+    if(i>pictures.length-1){
+      i=0;
+    }
+    document.querySelector('#picture').src=pictures[i];
+  }
+  let clear= setInterval (changing,4000)
+
+  document.querySelector('#picture').onclick = function q() {
+    i++;
+    if(i>pictures.length-1){
+      i=0;
+    }
+    clearInterval(clear)
+    document.querySelector('#picture').src=pictures[i];
+    gsap.from('#picture', {duration:1, scale:0.3, opacity:0, repeatDelay: 3})
+  }
+
+document.querySelector('#phone').onclick = function() {
+  document.querySelector('.hidden').style = 'display:block';
+  document.querySelector('#phone').style = 'display:none';
+  gsap.from('.hidden', {duration:1, scale:0.3, opacity:0, repeatDelay: 3})
+  
+}
+
   //Gsap
   gsap.to ('h1', {
     text: 'Привет!',
@@ -141,7 +172,6 @@ particlesJS("particles-js", {
     yoyo: true,
   })
 
-  console.clear();
   gsap.config({ trialWarn: false });
   gsap.registerPlugin(ScrollTrigger);
   gsap.to("#container", {
@@ -156,24 +186,6 @@ particlesJS("particles-js", {
     }
   });
 
-  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
-  10
-  11
-  12
-  13
-  14
-  15
-  16
-  17
-  18
   $('body').append('<div class="upbtn"></div>');            
   $(window).scroll(function() {
       if ($(this).scrollTop() > 2500) {

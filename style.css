@@ -226,15 +226,17 @@ p {
 
 .certificates {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 50%;
 }
 
 .certificate {
-  width: 300px;
-  height: 220px;
-  margin: 20px;
+  max-width: 400px;
+  min-width: 150px;
+  margin: 20px 0;
 }
 
 .portfolio {
@@ -407,11 +409,25 @@ h4 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  position: relative;
 }
+
 
 .sticker {
   width: 70px;
   margin: 10px;
+}
+
+.sticker:hover {
+  cursor:pointer;
+}
+
+.hidden {
+  display: none;
+  color: #E8EDE7;
+  position: absolute;
+  left: 130px;
+  top: 60px;
 }
 
 .footer {
@@ -490,6 +506,11 @@ h4 {
 
   .slide {
     width: 100%;
+  }
+
+  .hidden {
+    font-size: 20px;
+    left:50px;
   }
 }
 
@@ -593,6 +614,11 @@ h4 {
     text-align: center;
     margin: 0px 50px;
   }
+
+  .hidden {
+    left:300px;
+    top:0px;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -682,8 +708,8 @@ h4 {
   }
 
   .certificate {
-    width: 120px;
-    height: 90px;
+    width: 150px;
+    height: 110px;
   }
 
   .card {
@@ -736,6 +762,10 @@ h4 {
     width: 30px;
   }
 
+  #phone {
+    width: 30px;
+  }
+
   .footer {
     font-size: 10px;
   }
@@ -746,5 +776,17 @@ h4 {
     bottom: 10px;
     right: 10px;
   }
+
+  .hidden {
+    left:140px;
+    top:-15px;
+    font-size: 15px;
+  }
 }
 
+@media all and (max-width: 320px) {
+
+  .hidden {
+    left:110px;
+  }
+}
