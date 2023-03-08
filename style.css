@@ -321,7 +321,7 @@ p {
 
 .contacts {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 form {
@@ -348,12 +348,13 @@ h4 {
   font-size: 30px;
   margin-top: 20px;
   font-family: 'Gabriela', serif;
+  text-align: center;
 }
 
 .btn {
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 420px;
   font-family: 'Gabriela', serif;
   color: #E8EDE7;
   border: 2px solid #E8EDE7;
