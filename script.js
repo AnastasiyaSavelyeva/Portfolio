@@ -112,7 +112,7 @@ particlesJS("particles-js", {
   });
   
 
-  const pictures = ['images/JavaScript.png', 'images/htmlCSS.png', 'images/bootstrap5.png', 'images/Figma.png'];
+  const pictures = ['images/JavaScript.png', 'images/htmlCSS.png', 'images/bootstrap5.png', 'images/figma.png'];
   
   let i =0;
   
